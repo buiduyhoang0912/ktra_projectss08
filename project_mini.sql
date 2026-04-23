@@ -1,4 +1,4 @@
-drop database if exists ktra;
+drop database ktra;
 create database ktra;
 use ktra;
 
@@ -55,7 +55,9 @@ values
     (102, 'recruitment system', 3, '2024-02-01', '2024-08-01'),
     (103, 'marketing campaign', 4, '2024-03-01', '2024-12-31'); 
 
-update employee set salary = salary + 100 where dept_id = 1;
+update employee 
+    set salary = salary + 200 
+    where dept_id = 1;
 
 select emp_name, email,
     case 
